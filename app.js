@@ -108,6 +108,12 @@ const internQuestions = [{
     message: "What is your intern's school?"
 }
 ];
+const list = [{
+    type: "list",
+    name: "teamMember_type",
+    choices: ["Engineer", "Intern", "I don't want to add any more team members"],
+    message: "Select the role to add in your team?"
+}];
 
 // Prints the manager question and add manager check later
 // If statements to connect every functions for the promt above
