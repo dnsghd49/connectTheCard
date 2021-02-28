@@ -19,8 +19,88 @@ const confirmManager = [{
     name: 'Manager',
     message: 'Are you a manager?'
 }];
+const managersInfo = [{
+    type: "input",
+    name: "managers_name",
+    message: "What is your name?"
+},
+{
+    type: "input",
+    name: "managers_id",
+    message: "What is your id?"
+},
+{
+    type: "input",
+    name: "managers_email",
+    message: "What is your email?"
+},
+{
+    type: "input",
+    name: "managers_officeNumber",
+    message: "What is your office phone number?"
+}
+];
+const newManagersInfo = [{
+    type: "input",
+    name: "new_managers_name",
+    message: "What is your manager's name?"
+},
+{
+    type: "input",
+    name: "new_managers_department",
+    message: "What is your manager's department?"
+},
+{
+    type: "input",
+    name: "new_managers_id",
+    message: "What is your manager's id?"
+},
+{
+    type: "input",
+    name: "new_managers_email",
+    message: "What is your manager's email?"
+},
+{
+    type: "input",
+    name: "new_managers_officeNumber",
+    message: "What is your manager's office phone number?"
+}
+];
+
 // Prints the manager question and add manager check later
-inquirer.prompt(confirmManager);
+// If statements to connect every functions for the promt above
+inquirer.prompt(confirmManager).then(ans => {
+    if(ans.Manager === true){
+        promptManager();
+    }else {
+        promptMyManager();
+    }
+});
+
+
+// Depends on the user choice it will give different set of the promt questions from above
+const promptNext = () => {
+    nextetxttgottgonext
+}
+
+// Funtions for guiding users to register a new manager if the user selects no to the manager question
+// Ofc if the answer is yes then it guids to the next promt
+const promptManager = () => {
+    inquirer.prompt(managersInfo).then(ans => {
+        console.log(ans);
+        mainArr.push(new Manager(ans.managers_name, ans.managers_id, ans.managers_email, ans.managers_officeNumber));
+        promptNext();
+    });
+};
+const promptMyManager = () => {
+    inquirer.prompt(newManagersInfo).then(ans => {
+        console.log(ans);
+        mainArr.push(new Manager(ans.managers_name, ans.managers_id, ans.managers_email, ans.managers_officeNumber));
+        promptNext();
+    });
+};
+
+//
 
 
 
