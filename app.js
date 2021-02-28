@@ -66,13 +66,55 @@ const newManagersInfo = [{
     message: "What is your manager's office phone number?"
 }
 ];
+const engineerQuestions = [{
+    type: "input",
+    name: "engineers_name",
+    message: "What is your engineer's name?"
+},
+{
+    type: "input",
+    name: "engineers_id",
+    message: "What is your engineer's id?"
+},
+{
+    type: "input",
+    name: "engineers_email",
+    message: "What is your engineer's email?"
+},
+{
+    type: "input",
+    name: "engineers_gitHub",
+    message: "What is your engineer's GitHub username?"
+}
+];
+const internQuestions = [{
+    type: "input",
+    name: "interns_name",
+    message: "What is your intern's name?"
+},
+{
+    type: "input",
+    name: "interns_id",
+    message: "What is your intern's id?"
+},
+{
+    type: "input",
+    name: "interns_email",
+    message: "What is your intern's email?"
+},
+{
+    type: "input",
+    name: "interns_school",
+    message: "What is your intern's school?"
+}
+];
 
 // Prints the manager question and add manager check later
 // If statements to connect every functions for the promt above
 inquirer.prompt(confirmManager).then(ans => {
-    if(ans.Manager === true){
+    if (ans.Manager === true) {
         promptManager();
-    }else {
+    } else {
         promptMyManager();
     }
 });
@@ -80,7 +122,16 @@ inquirer.prompt(confirmManager).then(ans => {
 
 // Depends on the user choice it will give different set of the promt questions from above
 const promptNext = () => {
-    nextetxttgottgonext
+    inquirer.prompt(list).then(data => {
+        switch (data.teamMember_type) {
+            case "Engineer":
+                promptEngineer();
+                break;
+            case "Intern":
+                promptIntern();
+                break;
+        }
+    });
 }
 
 // Funtions for guiding users to register a new manager if the user selects no to the manager question
@@ -100,8 +151,23 @@ const promptMyManager = () => {
     });
 };
 
-//
+// Function for engineer sets of promts
+const promptEngineer = () => {
+    inquirer.prompt(engineerQuestions).then(ans => {
+        console.log(ans);
+        mainArr.push(new Engineer(ans.engineers_name, ans.engineers_id, ans.engineers_email, ans.engineers_gitHub));
+        promptNext();
+    });
+};
 
+// Function for intern sets of promts
+const promptIntern = () => {
+    inquirer.prompt(internQuestions).then(ans => {
+        console.log(ans);
+        mainArr.push(new Intern(ans.interns_name, ans.interns_id, ans.interns_email, ans.interns_school));
+        promptNext();
+    });
+};
 
 
 // Write code to use inquirer to gather information about the development team members,
