@@ -173,6 +173,7 @@ const promptIntern = () => {
     });
 };
 
+// Function to create html page with the user inputs
 const createHtml = () => {
     console.log('this is new html');
     console.log(render(mainArr));
