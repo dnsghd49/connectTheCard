@@ -10,6 +10,19 @@ const outputPath = path.join(OUTPUT_DIR, "team.html");
 
 const render = require("./lib/htmlRenderer");
 
+let mainArr = [];
+
+// Starting user questions here
+// Manager or not
+const confirmManager = [{
+    type: 'confirm',
+    name: 'Manager',
+    message: 'Are you a manager?'
+}];
+// Prints the manager question and add manager check later
+inquirer.prompt(confirmManager);
+
+
 
 // Write code to use inquirer to gather information about the development team members,
 // and to create objects for each team member (using the correct classes as blueprints!)
