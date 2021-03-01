@@ -24,11 +24,11 @@ This application will promt manager sets of questions to manage the employees un
 
 * [Questions](#questions)
 
-## Screenshot
-
-![ScreenShot](https://raw.github.com/dnsghd49/connectTheCard/main/screenshots/screenshot.PNG)
+## Screenshots
 
 ![ScreenShot](https://raw.github.com/dnsghd49/connectTheCard/main/screenshots/screenshot1.PNG)
+
+![ScreenShot](https://raw.github.com/dnsghd49/connectTheCard/main/screenshots/screenshot2.PNG)
 
 ## Video Demo
 
@@ -44,7 +44,7 @@ npm install
 
 ## Usage
 
-nothing~
+User can use this app to manage all of the employees at once, with their name, role, id, email, phone number(manager), github page(engineers), and school(intern).
 
 
   
