@@ -28,7 +28,7 @@ This application will promt manager sets of questions to manage the employees un
 
 ![ScreenShot](https://raw.github.com/dnsghd49/connectTheCard/main/screenshots/screenshot1.PNG)
 
-![ScreenShot](https://raw.github.com/dnsghd49/connectTheCard/main/screenshots/screenshot2.PNG)
+![ScreenShot](https://raw.github.com/dnsghd49/connectTheCard/main/screenshots/screenshot.PNG)
 
 ## Video Demo
 
