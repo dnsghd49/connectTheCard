@@ -26,7 +26,7 @@ This application will promt manager sets of questions to manage the employees un
 
 ## Screenshot
 
-![ScreenShot](https://raw.github.com/dnsghd49/Template Engine - Employee Summary/)
+![ScreenShot](https://raw.github.com/dnsghd49/connectTheCard/)
 
 ## Installation
 
