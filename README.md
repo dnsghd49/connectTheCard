@@ -8,7 +8,7 @@
 
 ## Description
 
-This application will promt a manager sets of questions to manage the employees under a management. After answering all the question the app will generate a html file that shows all the employees that the manager inputed into the app.
+This application will promt a manager sets of questions to manage the employees under a department. After answering all the necessary questions the app will generate a html file that shows all the data that user inputed earlier.
 
 ## Table of Contents 
 
