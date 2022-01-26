@@ -51,7 +51,7 @@ User can use this app to manage all of the employees at once, with their name, r
 To run the app, run the following command:
 
 ```
-node .js
+node app.js
 ```
   
 ## Contributing
