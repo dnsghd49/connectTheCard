@@ -16,6 +16,8 @@ This application will prompt a manager sets of questions to manage the employees
 
 * [Installation](#installation)
 
+* [Start](#Start_script)
+
 * [Usage](#usage)
 
 * [Contributing](#contributing)
@@ -44,7 +46,13 @@ npm install
 
 User can use this app to manage all of the employees at once, with their name, role, id, email, phone number(manager), github page(engineers), and school(intern).
 
+## Start_script
 
+To run the app, run the following command:
+
+```
+node .js
+```
   
 ## Contributing
 
