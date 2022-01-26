@@ -20,8 +20,6 @@ This application will prompt a manager sets of questions to manage the employees
 
 * [Contributing](#contributing)
 
-* [Tests](#tests)
-
 * [Questions](#questions)
 
 ## Screenshots
@@ -51,14 +49,6 @@ User can use this app to manage all of the employees at once, with their name, r
 ## Contributing
 
 make an issue about anything that should be improved.
-
-## Tests
-
-To run tests, run the following command:
-
-```
-node app.js
-```
 
 ## Questions
 
